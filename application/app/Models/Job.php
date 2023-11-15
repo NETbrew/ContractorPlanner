@@ -10,5 +10,10 @@ class Job extends Model
     use HasFactory;
 
     protected $guarded = ['id', 'timestamps'];
+    protected $hidden = ['created_at', 'updated_at'];
+
+    public function user() {
+        return $this->belongsTo(User::class)->withDefault();
+    }
 
 }

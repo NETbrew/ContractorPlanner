@@ -7,7 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Event;
 
-class EventSeeder extends Seeder
+class JobSeeder extends Seeder
 {
     /**
      * Run the database seeds.
