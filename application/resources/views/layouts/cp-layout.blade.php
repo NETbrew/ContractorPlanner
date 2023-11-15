@@ -17,14 +17,9 @@
             <a href="#" class="underline">Records</a>
         </nav>
     </header>
-    <main class="container mx-auto p-4 flex-1 px-4">
-        {{-- Title --}}
-        <h1 class="text-3xl mb-4">
-            {{ $title ?? 'home' }}
-        </h1>
+    <main>
         {{-- Main content --}}
         {{$slot}}
-
     </main>
     <footer class="container mx-auto p-4 text-sm border-t flex justify-between items-center">
         <div>The Vinyl Shop - © {{ date('Y') }}</div>
