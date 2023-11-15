@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     {
         User::factory()->create([
             'name' => 'PURplus',
-            'email' => 'info@purplus.be',
+            'email' => 'info@fake.be',
             'password' => Hash::make('admin')
         ]);
     }
