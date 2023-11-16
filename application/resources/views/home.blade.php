@@ -6,7 +6,7 @@
                 <h1 class="text-3xl md:text-5xl font-bold">welcome to the constructPlanner</h1>
                 <h2 class="text-1xl md:text-3xl">developed and maintained by NETbrew</h2>
                 <p class="mt-5">
-                    <a href="#" class="py-3 px-4 bg-white text-blue-500 border-2 border-white rounded hover:bg-blue-500 hover:text-white transition">login</a>
+                    <a href="{{route('login')}}" class="py-3 px-4 bg-white text-blue-500 border-2 border-white rounded hover:bg-blue-500 hover:text-white transition">login</a>
                     <a href="https://github.com/NETbrew/ContractorPlanner" class="py-3 px-4 bg-blue-500 text-white border-2 border-white rounded hover:bg-white hover:text-blue-500 transition" >GitHub Repo</a>
                 </p>
             </div>

@@ -11,11 +11,9 @@
 <div class="flex flex-col space-y-4 min-h-screen text-gray-800 bg-gray-100">
     <header class="shadow bg-white/70 sticky inset-0 backdrop-blur-sm z-10">
         {{--  Navigation  --}}
-        <nav class="container mx-auto p-4 flex justify-between items-center">
-            <a href="{{ route('home') }}" class="underline">Home</a>
-            <a href="#" class="underline">Contact</a>
-            <a href="#" class="underline">Records</a>
-        </nav>
+        @livewire('navigation-menu')
+
+
     </header>
     <main>
         {{-- Main content --}}

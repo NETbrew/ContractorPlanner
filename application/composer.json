@@ -10,6 +10,7 @@
         "blade-ui-kit/blade-icons": "^1.5",
         "codeat3/blade-phosphor-icons": "^2.0",
         "codeat3/blade-simple-icons": "^1.93",
+        "codeat3/blade-vaadin-icons": "^1.4",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
         "laravel/framework": "^10.10",
