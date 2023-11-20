@@ -5,32 +5,32 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('home') }}">
-                        <x-vaadin-calendar class="block h-9 w-auto" />
+                        <x-vaadin-calendar class="block h-9 w-auto text-blue-500" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                    <x-nav-link href="{{ route('home') }}" :active="$title = true">
                         {{ __('ConstructPlanner') }}
                     </x-nav-link>
                 </div>
             </div>
+            @guest
+                <div class="flex justify-between">
+                    <x-nav-link href="{{route('login')}}" :active="request()->routeIs('login')" >
+                        {{ __('login') }}
+                    </x-nav-link>
+                </div>
+            @endguest
+            @auth
+                <div class="flex justify-between">
+                    <x-nav-link href="{{route('dashboard')}}" :active="request()->routeIs('dashboard')">
+                        {{ __('dashboard') }}
+                    </x-nav-link>
+                </div>
+            @endauth
         </div>
-        @guest
-            <div class="flex justify-between h-16">
-                <x-nav-link href="{{route('login')}}" :active="request()->routeIs('login')">
-                    {{ __('login') }}
-                </x-nav-link>
-            </div>
-        @endguest
-        @auth
-            <div class="flex justify-between h-16">
-                <x-nav-link href="{{route('login')}}" :active="request()->routeIs('login')">
-                    {{ __('login') }}
-                </x-nav-link>
-            </div>
-        @endauth
     </div>
 </nav>
 {{--<nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
