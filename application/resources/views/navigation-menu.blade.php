@@ -28,6 +28,14 @@
                     <x-nav-link href="{{route('dashboard')}}" :active="request()->routeIs('dashboard')">
                         {{ __('dashboard') }}
                     </x-nav-link>
+                    <form method="POST" action="{{ route('logout') }}" x-data>
+                        @csrf
+
+                        <x-responsive-nav-link href="{{ route('logout') }}"
+                                               @click.prevent="$root.submit();">
+                            {{ __('Log Out') }}
+                        </x-responsive-nav-link>
+                    </form>
                 </div>
             @endauth
         </div>
